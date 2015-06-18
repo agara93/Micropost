@@ -1,16 +1,25 @@
- <header class="navbar navbar-fixed-top navbar-inverse">
+ <!-- <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-       <%= link_to "sample app", root_path, id: "logo" %>  
+    <!--   <%= link_to "sample app", root_path, id: "logo" %>  
         <!-- <%= link_to image_tag("MNC_BANK_logo.png", alt: "MNCBank logo", width: "285", height: "60"), 'http://mncbank.co.id/' %> -->
-        <nav>
-          <div class="navbar-collapse collapse">
+   <!--     <nav>
           <ul>
             <ul class="nav navbar-nav navbar-right">
               <li><%= link_to "Home",  root_path %></li>
               <li><%= link_to "Help",  help_path %></li>
               <li><%= link_to "Sign Up",  signup_path %></li>
           </ul>
-          </div>
         </nav>
      </div> 
-</header>
+</header> -->
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Sample App</a>
+    <ul class="nav">
+      <li class="active"><%= link_to "Home",  root_path %></li>
+      <li><%= link_to "Help",  help_path %></li>
+      <li><%= link_to "Sign Up",  signup_path %></li>
+    </ul>
+  </div>
+</div>
