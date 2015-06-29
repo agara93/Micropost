@@ -89,5 +89,4 @@ Rails.application.configure do
     :domain   =>    'heroku.com'
     :authentication => :plain
     }
-  ActionMailer::Base.delivery_method = :smtp  
 end
