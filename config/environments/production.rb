@@ -86,7 +86,9 @@ Rails.application.configure do
     :address  =>    'smtp.mandrillapp.com',
     :username =>    ENV['MANDRILL_USERNAME'],
     :password =>    ENV['MANDRILL_APIKEY'],
-    :domain   =>    'heroku.com'
-    :authentication => :plain
+    :domain   =>    'heroku.com',
+    :authentication => :plain,
+    :enable_starttls_auto => true
     }
+  ActionMailer::Base.delivery_method = :smtp
 end
