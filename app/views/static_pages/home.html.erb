@@ -1,38 +1,5 @@
 <% if logged_in? %>
-  <div class = "row" >
-    <aside class = "col-md-4">
-      <section class = "user_info">
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class = "stats">
-        <%= render 'shared/stats' %>
-      </section>
-      <section class = "micropost_form">
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class = "col-md-8">
-      <h3> Micropost feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
+     <%= render 'static_pages/user_home' %>
 <% else %>
-
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://mncbank.co.id/">MNC Bank Monitoring</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Log in", login_path , class: "btn btn-lg btn-primary" %>
-</div>
-
-<!-- <%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %> 
--->
-
-<%= link_to image_tag("MNC_BANK_logo.png", alt: "MNC logo", width: "250px", heigth: "60px"), 'http://mncbank.co.id/' %> 
+    <%= render 'static_pages/visitor_home' %>
 <% end %>
